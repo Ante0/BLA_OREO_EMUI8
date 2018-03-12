@@ -735,6 +735,7 @@ struct usb_interface_assoc_descriptor {
 	__u8  iFunction;
 } __attribute__ ((packed));
 
+#define USB_DT_INTERFACE_ASSOCIATION_SIZE	8
 
 /*-------------------------------------------------------------------------*/
 
@@ -778,8 +779,6 @@ struct usb_encryption_descriptor {
 	__u8  bEncryptionValue;		/* use in SET_ENCRYPTION */
 	__u8  bAuthKeyIndex;
 } __attribute__((packed));
-
-#define USB_DT_INTERFACE_ASSOCIATION_SIZE	8
 
 /*-------------------------------------------------------------------------*/
 
